@@ -2,8 +2,30 @@
 
 #show: doc => setup("Project brief", doc)
 
+#let authors = "Tila Muhammad and Ethan Bastian"
+#let group = "Research group SES"
+
+#set page(
+  header: grid(
+    columns: (auto, 1fr),
+    align: (left + horizon, right + horizon),
+    image("saxion-logo.jpg", height: 7.5mm),
+    text(size: 8.5pt, fill: luma(110))[Mini Energy Hub #sym.dot.c Project brief],
+  ),
+  footer: context {
+    set text(size: 8pt, fill: luma(125))
+    grid(
+      columns: (1fr, auto),
+      align: (left + horizon, right + horizon),
+      [#authors #sym.dot.c #group #sym.dot.c Saxion Hogeschool],
+      counter(page).display(),
+    )
+  },
+)
+
+#v(0.5em)
+
 #align(center)[
-  #v(0.2em)
   #text(size: 9pt, weight: "bold", fill: luma(120), tracking: 1.5pt)[
     INTERNATIONAL PROJECT WEEK #sym.dot.c STUDENT PROJECT BRIEF
   ]
@@ -14,9 +36,16 @@
   #v(0.2em)
   An interactive demonstrator for secondary education
 
-  #v(0.8em)
+  #v(0.9em)
+  #block(width: 100%, stroke: (top: 0.5pt + luma(180), bottom: 0.5pt + luma(180)), inset: (y: 7pt))[
+    #set text(size: 9pt)
+    *Responsible authors:* #authors \
+    #group #sym.dot.c Saxion Hogeschool
+  ]
+
+  #v(0.7em)
   #text(size: 9pt, fill: luma(90))[
-    13 November 2026 #sym.dot.c firmware and wiring reference:
+    16 November 2026 #sym.dot.c firmware and wiring reference:
     #link(repo_url)[#repo_url]
   ]
 ]
@@ -272,5 +301,5 @@ Download the toolchain before the project week: the first build fetches roughly
 #briefnote[
   *Project scope note:* The brief describes a demonstrator rather than a
   grid-connected energy system. Keep the classroom setup low-voltage and do not
-  connect it directly to mains electricity accept the power supply.
+  connect it directly to mains electricity except the power supply.
 ]

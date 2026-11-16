@@ -50,5 +50,5 @@ protection, and never leave a cell charging unattended.
 typst compile assignment3.typ
 ```
 
-Needs `style.typ` beside it, plus the Zed Sans Extended and JetBrainsMono NF
-fonts.
+Needs `style.typ` and `saxion-logo.jpg` beside it, plus the Zed Sans Extended
+and JetBrainsMono NF fonts.
