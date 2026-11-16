@@ -9,7 +9,7 @@
   header: grid(
     columns: (auto, 1fr),
     align: (left + horizon, right + horizon),
-    image("saxion-logo.jpg", height: 7.5mm),
+    image("saxion-logo.jpg", height: 11mm),
     text(size: 8.5pt, fill: luma(110))[Mini Energy Hub #sym.dot.c Project brief],
   ),
   footer: context {
@@ -17,7 +17,7 @@
     grid(
       columns: (1fr, auto),
       align: (left + horizon, right + horizon),
-      [#authors #sym.dot.c #group #sym.dot.c Saxion Hogeschool],
+      [#authors #sym.dot.c #group #sym.dot.c Saxion University of Applied Sciences],
       counter(page).display(),
     )
   },
@@ -40,7 +40,7 @@
   #block(width: 100%, stroke: (top: 0.5pt + luma(180), bottom: 0.5pt + luma(180)), inset: (y: 7pt))[
     #set text(size: 9pt)
     *Responsible authors:* #authors \
-    #group #sym.dot.c Saxion Hogeschool
+    #group #sym.dot.c Saxion University of Applied Sciences
   ]
 
   #v(0.7em)
